@@ -1,0 +1,200 @@
+[2019-02-22 11:10:58] local.ERROR: Command "m:c" is ambiguous.
+Did you mean one of these?
+    make:channel    Create a new channel class
+    make:command    Create a new Artisan command
+    make:controller Create a new controller class {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"m:c\" is ambiguous.
+Did you mean one of these?
+    make:channel    Create a new channel class
+    make:command    Create a new Artisan command
+    make:controller Create a new controller class at /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php:664)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('m:c')
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-02-22 11:11:01] local.ERROR: Not enough arguments (missing: "name"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"name\"). at /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Input/Input.php:76)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(901): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ConsoleMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-02-22 11:22:16] local.ERROR: Class Sudoku\Service\SudokuService does not exist {"exception":"[object] (ReflectionException(code: 0): Class Sudoku\\Service\\SudokuService does not exist at /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php:838)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): ReflectionParameter->getClass()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(807): Illuminate\\Container\\Container->resolveDependencies(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:23:38] local.ERROR: Class Sudoku\Service\SudokuService does not exist {"exception":"[object] (ReflectionException(code: 0): Class Sudoku\\Service\\SudokuService does not exist at /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php:838)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): ReflectionParameter->getClass()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(807): Illuminate\\Container\\Container->resolveDependencies(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:23:42] local.ERROR: Class Sudoku\Service\SudokuService does not exist {"exception":"[object] (ReflectionException(code: 0): Class Sudoku\\Service\\SudokuService does not exist at /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php:838)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): ReflectionParameter->getClass()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(807): Illuminate\\Container\\Container->resolveDependencies(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:31:20] local.ERROR: Class Sudoku\Service\SudokuService does not exist {"exception":"[object] (ReflectionException(code: 0): Class Sudoku\\Service\\SudokuService does not exist at /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php:838)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): ReflectionParameter->getClass()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(807): Illuminate\\Container\\Container->resolveDependencies(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:31:45] local.ERROR: Class Sudoku\Service\SudokuService does not exist {"exception":"[object] (ReflectionException(code: 0): Class Sudoku\\Service\\SudokuService does not exist at /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php:838)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): ReflectionParameter->getClass()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(807): Illuminate\\Container\\Container->resolveDependencies(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:33:30] local.ERROR: Class Sudoku\Service\SudokuService does not exist {"exception":"[object] (ReflectionException(code: 0): Class Sudoku\\Service\\SudokuService does not exist at /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php:838)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): ReflectionParameter->getClass()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(807): Illuminate\\Container\\Container->resolveDependencies(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:36:53] local.ERROR: Class 'Sudoku\Service\SudokuService' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Sudoku\\Service\\SudokuService' not found at /home/intern2/Document/Projects/sudoku-solver/app/Console/Commands/SudokuSolver.php:39)
+[stacktrace]
+#0 [internal function]: App\\Console\\Commands\\SudokuSolver->__construct()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(812): ReflectionClass->newInstanceArgs(Array)
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(759): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(241): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(221): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(148): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(71): Illuminate\\Console\\Application->bootstrap()
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(317): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.7.27')
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#11 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2019-02-22 11:44:15] local.ERROR: Return value of Sudoku\Service\SudokuService::loadGridFromPath() must be an instance of Sudoku\Grid\GridInterface, null returned {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Return value of Sudoku\\Service\\SudokuService::loadGridFromPath() must be an instance of Sudoku\\Grid\\GridInterface, null returned at /home/intern2/Document/Projects/sudoku-solver/app/Sudoku/Service/SudokuService.php:27)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/app/Console/Commands/SudokuSolver.php(49): Sudoku\\Service\\SudokuService->loadGridFromPath('')
+#1 [internal function]: App\\Console\\Commands\\SudokuSolver->handle()
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(901): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\SudokuSolver), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2019-02-22 11:48:51] local.ERROR: Return value of Sudoku\Solver\BackTrackingSolver::solve() must implement interface Sudoku\Grid\GridInterface, null returned {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Return value of Sudoku\\Solver\\BackTrackingSolver::solve() must implement interface Sudoku\\Grid\\GridInterface, null returned at /home/intern2/Document/Projects/sudoku-solver/app/Sudoku/Solver/BackTrackingSolver.php:14)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/app/Sudoku/Service/SudokuService.php(46): Sudoku\\Solver\\BackTrackingSolver->solve(Object(Sudoku\\Grid\\Grid))
+#1 /home/intern2/Document/Projects/sudoku-solver/app/Console/Commands/SudokuSolver.php(52): Sudoku\\Service\\SudokuService->solveGrid(Object(Sudoku\\Grid\\Grid))
+#2 [internal function]: App\\Console\\Commands\\SudokuSolver->handle()
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Container/Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#8 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(901): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\SudokuSolver), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2019-02-22 13:03:33] local.ERROR: Not enough arguments (missing: "path"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"path\"). at /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Input/Input.php:76)
+[stacktrace]
+#0 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(901): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\SudokuSolver), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/intern2/Document/Projects/sudoku-solver/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /home/intern2/Document/Projects/sudoku-solver/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /home/intern2/Document/Projects/sudoku-solver/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-02-22 21:04:41] local.ERROR: Declaration of Sudoku\Grid\Grid::setAuthor(?string $author = ''): Sudoku\Grid\Grid must be compatible with Sudoku\Grid\GridInterface::setAuthor(?string $author = ''): Sudoku\Grid\GridInterface {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Declaration of Sudoku\\Grid\\Grid::setAuthor(?string $author = ''): Sudoku\\Grid\\Grid must be compatible with Sudoku\\Grid\\GridInterface::setAuthor(?string $author = ''): Sudoku\\Grid\\GridInterface at /home/intern2/Document/Projects/sudoku-solver/app/Sudoku/Grid/Grid.php:15)
+[stacktrace]
+#0 {main}
+"} 
+[2019-02-22 21:57:00] local.ERROR: A void function must not return a value {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): A void function must not return a value at /home/intern2/Document/Projects/sudoku-solver/app/Sudoku/Service/SudokuService.php:41)
+[stacktrace]
+#0 {main}
+"} 
