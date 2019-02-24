@@ -7,8 +7,9 @@ composer install
 php artisan serve
 ```
 
-#### Code analysis
+#### Code analysis and Unit tests
 
 ```
 ./vendor/bin/phpcs app --standard=PSR2 
+./vendor/bin/phpunit
 ```
