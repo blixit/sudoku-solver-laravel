@@ -22,7 +22,7 @@ class BackTrackingSolver extends AbstractSolver implements SolverInterface
             return true;
         }
 
-        for ($digit=1; $digit<=9; $digit++) {
+        for ($digit = 1; $digit <= 9; $digit++) {
             if ($this->isSafe($grid, $nextPosition->getRow(), $nextPosition->getColumn(), (string) $digit)) {
                 $grid->setInitialCoordinates(new Coordinate($nextPosition->getRow(), $nextPosition->getColumn()));
                 $grid->setCell($nextPosition->getRow(), $nextPosition->getColumn(), (string) $digit);

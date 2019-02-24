@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Sudoku\Grid;
 
-use Datetime;
+use DateTime;
 use SplFileInfo;
 use SplFileObject;
 use Throwable;
@@ -59,15 +59,18 @@ class GridLoader implements GridLoaderInterface
             $read = trim(str_replace('#D', '', $line));
             $grid->setDescription($read);
 
+            /** @var string $read */
             $read = $file->fscanf("#B%s");
-            $grid->setCreationDate(
-                DateTime::createFromFormat('d-m-Y', $read[0])
-            );
+
+            /** @var DateTime $date */
+            $date = DateTime::createFromFormat('d-m-Y', $read[0]);
+            $grid->setCreationDate($date);
 
             list($row, $column) = $file->fscanf("#P%d %d");
             $grid->setInitialCoordinates(new Coordinate((int) $row, (int) $column));
 
             $i = 0;
+            /** @var string $sudokuLine */
             while ($sudokuLine = $file->fscanf("%s")) {
                 // read sudoku line
                 $chars = str_split($sudokuLine[0]);

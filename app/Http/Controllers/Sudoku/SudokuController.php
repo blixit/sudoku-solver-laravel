@@ -29,7 +29,7 @@ class SudokuController extends Controller
                     if (! ($file instanceof UploadedFile)) {
                         throw new Exception('A file with the sudoku problem is required');
                     }
-                    $grid = $sudokuService->loadGridFromPath($file->getRealPath());
+                    $grid = $sudokuService->loadGridFromPath((string) $file->getRealPath());
 
                     break;
                 default:

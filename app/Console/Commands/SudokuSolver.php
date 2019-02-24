@@ -52,6 +52,7 @@ class SudokuSolver extends Command
     public function handle()
     {
         try {
+            /** @var string $path */
             $path = $this->input->getArgument('gridPath');
             $grid = $this->sudokuService->loadGridFromPath($path);
 

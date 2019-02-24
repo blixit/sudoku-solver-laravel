@@ -140,7 +140,7 @@ class Grid implements GridInterface
             $this->setCell(
                 $row,
                 $k,
-                $char === '.' ? '' : $char
+                $char === '.' ? '' : (string) $char
             );
         }
     }
@@ -196,12 +196,12 @@ class Grid implements GridInterface
                     $cell = '.';
                 }
                 $string .= $cell;
-                if (($col+1)%3 == 0) {
+                if (($col + 1) % 3 === 0) {
                     $string .= ' ';
                 }
             }
             $string .= "\n";
-            if (($row+1)%3 == 0) {
+            if (($row + 1) % 3 === 0) {
                 $string .= "\n";
             }
         }
