@@ -100,7 +100,7 @@ class Grid implements GridInterface
         $grid = new static();
         $lines = explode("\n", $stringGrid);
         if (count($lines) !== $grid->getHeight()) {
-            throw new GridLoaderException('The number of lines is not correct');
+            throw new GridLoaderException('The number of lines ' . count($lines) . ' is not correct');
         }
 
         foreach ($lines as $i => $line) {
